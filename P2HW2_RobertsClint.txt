@@ -1,0 +1,35 @@
+# CTI-110
+# P2HW2 - List
+# Name: Clint Roberts
+# Date: 04/06/2023
+#
+
+#Ask user for module test scores & Display them
+module1 = float(input("Enter grade for Module 1: "))
+module2 = float(input("Enter grade for Module 2: "))
+module3 = float(input("Enter grade for Module 3: "))
+module4 = float(input("Enter grade for Module 4: "))
+module5 = float(input("Enter grade for Module 5: "))
+module6 = float(input("Enter grade for Module 6: "))
+test_scores = [module1, module2, module3, module4, module5, module6]
+
+dots = '-' * 12
+print ('\n'+ dots+ "Results" +dots)
+#Display the lowest grade
+score_min = min (test_scores)
+print (f'{"Lowest Grade:":<20}{score_min}')
+
+#Display the highest grade
+score_max = max (test_scores)
+print (f'{"Highest Grade:":<20}{score_max}')
+
+#Display sum of grades
+score_sum = sum (test_scores)
+print (f'{"Sum of Grades:":<20}{score_sum}')
+
+#Display grade average
+score_ave = sum (test_scores) / 6
+print (f'{"Average:":<20}{score_ave:.2f}')
+
+dots = '-' * 31
+print (dots)
