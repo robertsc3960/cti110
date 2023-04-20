@@ -1,6 +1,12 @@
+#Leap year evaluator
+
+#user inputs year
 input_year = int(input())
 
+#evaluate leap year 
 if input_year % 4 == 0 and (input_year % 100 != 0 or input_year % 400 == 0):
+
+#outputs the results for user
     print(input_year, "- leap year")
 else:
     print(input_year, "- not a leap year")
